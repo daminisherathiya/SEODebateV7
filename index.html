@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/SEODebateV7.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>SEODebateV7</title>
+</head>
+
+<body class="background">
+
+  <header class="fixed-top navigation-section">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl navbar-light navbar-height">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand d-flex align-items-center" href="#"><img src="./images/logo.png" alt=""></a>
+          <div class="collapse position-absolute nav-search-bar w-100 overflow-hidden" id="collapseExample">
+            <div class="input-group search-input-height">
+              <span class="input-group-text bg-white border-0" id="basic-addon1"><img src="./images/search-icon.png"
+                  alt=""></span>
+              <input type="text" class="form-control border-0 search-input shadow-none" placeholder="Search anything"
+                aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="d-block d-xl-none"><img class="pe-2 pe-sm-3" src="./images/search-icon.png" alt=""
+                data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample"></div>
+            <div>
+              <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-items-center">
+              <li class="nav-item">
+                <a class="nav-link active mynav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link mynav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Explore <img class="pb-1 ps-1" src="./images/dropdown-arrow.png" alt="">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item mydropdown-item text-start" href="#">Action</a></li>
+                  <li><a class="dropdown-item mydropdown-item text-start" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item mydropdown-item text-start" href="#">Something else
+                      here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mynav-link" href="#">Questions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mynav-link" href="#">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mynav-link" href="#">Articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mynav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mynav-link" href="#">Tools</a>
+              </li>
+            </ul>
+            <div class="d-none d-xl-block"><img class="search-icon" src="./images/search-icon.png" alt=""
+                data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample"></div>
+            <div class="d-flex justify-content-center justify-content-xl-start">
+              <button class="btn login-btn shadow-none text-nowrap text-center" type="submit">Login -
+                Register</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="main-title-section">
+      <div class="background-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <h2 class="title-h">SeoDebate for all your questions</h2>
+              <div class="horizontal-line"></div>
+              <p class="title-p">These days there are many career  choices to take.</p>
+              <div class="row">
+                <div class="col-4">
+                  <div>
+                    <p class="mb-0">Questions</p>
+                    <h4 class="total-count">591k</h4>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div>
+                    <p class="mb-0">Answers</p>
+                    <h4 class="total-count">451k</h4>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div>
+                    <p class="mb-0">Users</p>
+                    <h4 class="total-count">71k</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-8 col-lg-9">
+              <div class="d-flex h-100 text-area-container">
+                <div class="ask-now-img d-none d-md-block"><img src="./images/ask-now-img.png" alt=""></div>
+                <div class="text-writer flex-grow-1">
+                  <div class="d-flex p-2">
+                    <div class="red-dot me-2"></div>
+                    <div class="yellow-dot me-2"></div>
+                    <div class="green-dot me-2"></div>
+                  </div>
+                  <div class="px-3 py-2">
+                    <div class="d-flex">
+                      <div class="vertical-line"></div>
+                      <textarea class="d-block w-100 text-area-box" placeholder="Ask a question" rows="4"></textarea>
+                    </div>
+                    <div class="text-end"><button class="btn ask-btn">Ask</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="categaries">
+            <div class="categaries-container">
+              <div class="row">
+                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                  <div class="mb-1 mb-sm-0">
+                    <a class="text-decoration-none d-flex align-items-center categorie-box" href="#">
+                    <img src="./images/categ-identification.png" alt="">
+                    <span class="categories-items">Identification</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                  <div>
+                    <a class="text-decoration-none d-flex align-items-center categorie-box" href="#">
+                    <img src="./images/categ-technical.png" alt="">
+                    <span class="categories-items">Technical Seo</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                  <div>
+                    <a class="text-decoration-none d-flex align-items-center categorie-box" href="#">
+                    <img src="./images/categ-onpage.png" alt="">
+                    <span class="categories-items">On Page Seo</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 py-2 py-lg-0">
+                  <div>
+                    <a class="text-decoration-none d-flex align-items-center categorie-box" href="#">
+                    <img src="./images/categ-offpage.png" alt="">
+                    <span class="categories-items">Off Page Seo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="filter-box">
+              <h4 class="filter-title">FILTERS</h4>
+            </div>
+            <div class="filter-box">
+              <div class="pb-2">
+                <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#Myactivity" aria-expanded="false" aria-controls="Myactivity">
+                  <div>My activity</div>
+                  <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
+                </button>
+              </div>  
+              <div class="collapse show mb-3" id="Myactivity">
+                <div class="form-check">
+                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault">
+                    Created or replied to
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-box">
+              <div class="pb-2">
+                <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#contains" aria-expanded="false" aria-controls="contains">
+                  <div>Contains</div>
+                  <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
+                </button>
+              </div>  
+              <div class="collapse show mb-3" id="contains">
+                <div class="form-check mb-3">
+                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault">
+                    Recommend Answer
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault">
+                    Bump Question
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault">
+                   Featured Questions
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault">
+                    Must read Questions
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-box">
+              <div class="pb-2">
+                <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#questiontype" aria-expanded="false" aria-controls="questiontype">
+                  <div>Question type</div>
+                  <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
+                </button>
+              </div>  
+              <div class="collapse show mb-3" id="questiontype">
+                <div class="form-check mb-3">
+                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault">
+                    Recent Questions
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault">
+                    Most Answered
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault">
+                    No Answers
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault">
+                    Most Visited
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-box">
+              <div class="pb-4">
+                <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#Details" aria-expanded="false" aria-controls="Details">
+                  <div>Details</div>
+                  <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
+                </button>
+              </div>  
+              <div class="collapse show mb-3" id="Details">
+                <div class="form-floating me-2">
+                  <select class="form-select p-3 shadow-none sidebar-border" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Topic</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="filter-box border-0">
+              <div class="pb-2">
+                <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#typekeywords" aria-expanded="false" aria-controls="typekeywords">
+                  <div>Search</div>
+                  <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
+                </button>
+              </div>  
+              <div class="collapse show mb-3 me-2" id="typekeywords">
+                <div class="input-group mb-3 sidebar-border">
+                  <input type="text" class="form-control border-0 search-input shadow-none search-keyword-input" placeholder="Type keywords"
+                  aria-label="Username" aria-describedby="basic-addon1">
+                  <span class="input-group-text bg-white border-0" id="basic-addon1"><img src="./images/search-icon.png"
+                    alt=""></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 col-sm-9">
+            <div class="q-box-padding">
+              <div id="id-pagination-data">
+                <div class="question-box">
+                  <div class="d-flex user-desc">
+                    <a href="#"><img class="user-img" src="./images/user-img.png" alt=""></a>
+                    <div>
+                      <h6 class="mb-2"><a class="link-hover text-decoration-none" href="#">Andrew Jonthan</a></h6>
+                      <div class="d-flex flex-column flex-sm-row date-view-box">
+                        <p class="in mb-1 mb-sm-0">In <a class="text-decoration-none" href="#"><u class="on-page link-hover">On page seo</u></a></p>
+                        <p class="divider-border date mb-1 mb-sm-0">Sep 25, 2020</p>
+                        <p class="views mb-1 mb-sm-0">25,567 Views</p>
+                      </div>
+                    </div>
+                    <div class="dropdown ms-auto">
+                      <a class="btn shadow-none py-0 px-1" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/vertical-dots.png" alt="">
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="question-semi-box">
+                    <h4><a class="text-decoration-none question" href="#">How to choose the right keyword?</a></h4>
+                    <p class="question-p">These days there are so many career choices to take in the programmer world. But one of
+                      successful and important ones is Web Development. These days there are so many 
+                      career choices to take.</p>
+                    <div><img class="img-fluid answer-img" src="./images/answer-img-1.png" alt=""></div>
+                    <div class="d-flex flex-column flex-sm-row mt-3">
+                      <a class="text-decoration-none mb-3 mb-sm-0" href="#your-answer"><img src="./images/answer-icon.png" alt=""><span class="answer-link">Answer</span></a>
+                      <div class="d-flex ms-sm-auto align-items-center">
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-like-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                        <div>
+                          <span class="total-like">25,567</span>
+                        </div>
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-dislike-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="question-box">
+                  <div class="d-flex user-desc">
+                    <a href="#"><img class="user-img" src="./images/user-img.png" alt=""></a>
+                    <div>
+                      <h6 class="mb-2"><a class="link-hover text-decoration-none" href="#">Andrew Jonthan</a></h6>
+                      <div class="d-flex flex-column flex-sm-row date-view-box">
+                        <p class="in mb-1 mb-sm-0">In <a class="text-decoration-none" href="#"><u class="on-page link-hover">On page seo</u></a></p>
+                        <p class="divider-border date mb-1 mb-sm-0">Sep 25, 2020</p>
+                        <p class="views mb-1 mb-sm-0">25,567 Views</p>
+                      </div>
+                    </div>
+                    <div class="dropdown ms-auto">
+                      <a class="btn shadow-none py-0 px-1" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/vertical-dots.png" alt="">
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="question-semi-box">
+                    <h4><a class="text-decoration-none question" href="#">Which terms is better for ranking in google?</a></h4>
+                    <p class="question-p">These days there are so many career choices to take in the programmer world. But one of
+                      successful and important ones is Web Development.</p>
+                    <div class="d-flex flex-column flex-sm-row mt-3">
+                      <a class="text-decoration-none mb-3 mb-sm-0" href="#your-answer"><img src="./images/answer-icon.png" alt=""><span class="answer-link">Answer</span></a>
+                      <div class="d-flex ms-sm-auto align-items-center">
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-like-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                        <div>
+                          <span class="total-like">25,567</span>
+                        </div>
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-dislike-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="question-box">
+                  <div class="d-flex user-desc">
+                    <a href="#"><img class="user-img" src="./images/user-img.png" alt=""></a>
+                    <div>
+                      <h6 class="mb-2"><a class="link-hover text-decoration-none" href="#">Andrew Jonthan</a></h6>
+                      <div class="d-flex flex-column flex-sm-row date-view-box">
+                        <p class="in mb-1 mb-sm-0">In <a class="text-decoration-none" href="#"><u class="on-page link-hover">On page seo</u></a></p>
+                        <p class="divider-border date mb-1 mb-sm-0">Sep 25, 2020</p>
+                        <p class="views mb-1 mb-sm-0">25,567 Views</p>
+                      </div>
+                    </div>
+                    <div class="dropdown ms-auto">
+                      <a class="btn shadow-none py-0 px-1" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/vertical-dots.png" alt="">
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="question-semi-box">
+                    <h4><a class="text-decoration-none question" href="#">How to choose the right keyword? Which term is better to rank higher is it long tail or short tail keyword?</a></h4>
+                    <div class="d-flex flex-column flex-sm-row mt-4">
+                      <a class="text-decoration-none mb-3 mb-sm-0" href="#your-answer"><img src="./images/answer-icon.png" alt=""><span class="answer-link">Answer</span></a>
+                      <div class="d-flex ms-sm-auto align-items-center">
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-like-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                        <div>
+                          <span class="total-like">25,567</span>
+                        </div>
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-dislike-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="question-box">
+                  <div class="d-flex user-desc">
+                    <a href="#"><img class="user-img" src="./images/user-img.png" alt=""></a>
+                    <div>
+                      <h6 class="mb-2"><a class="link-hover text-decoration-none" href="#">Andrew Jonthan</a></h6>
+                      <div class="d-flex flex-column flex-sm-row date-view-box">
+                        <p class="in mb-1 mb-sm-0">In <a class="text-decoration-none" href="#"><u class="on-page link-hover">On page seo</u></a></p>
+                        <p class="divider-border date mb-1 mb-sm-0">Sep 25, 2020</p>
+                        <p class="views mb-1 mb-sm-0">25,567 Views</p>
+                      </div>
+                    </div>
+                    <div class="dropdown ms-auto">
+                      <a class="btn shadow-none py-0 px-1" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/vertical-dots.png" alt="">
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="question-semi-box">
+                    <h4><a class="text-decoration-none question" href="#">How to choose the right keyword?</a></h4>
+                    <p class="question-p">These days there are so many career choices to take in the programmer world. But one of
+                      successful and important ones is Web Development. These days there are so many 
+                      career choices to take.</p>
+                    <div><img class="img-fluid answer-img" src="./images/answer-img-1.png" alt=""></div>
+                    <div class="d-flex flex-column flex-sm-row mt-3">
+                      <a class="text-decoration-none mb-3 mb-sm-0" href="#your-answer"><img src="./images/answer-icon.png" alt=""><span class="answer-link">Answer</span></a>
+                      <div class="d-flex ms-sm-auto align-items-center">
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-like-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                        <div>
+                          <span class="total-like">25,567</span>
+                        </div>
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-dislike-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="question-box">
+                  <div class="d-flex user-desc">
+                    <a href="#"><img class="user-img" src="./images/user-img.png" alt=""></a>
+                    <div>
+                      <h6 class="mb-2"><a class="link-hover text-decoration-none" href="#">Andrew Jonthan</a></h6>
+                      <div class="d-flex flex-column flex-sm-row date-view-box">
+                        <p class="in mb-1 mb-sm-0">In <a class="text-decoration-none" href="#"><u class="on-page link-hover">On page seo</u></a></p>
+                        <p class="divider-border date mb-1 mb-sm-0">Sep 25, 2020</p>
+                        <p class="views mb-1 mb-sm-0">25,567 Views</p>
+                      </div>
+                    </div>
+                    <div class="dropdown ms-auto">
+                      <a class="btn shadow-none py-0 px-1" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/vertical-dots.png" alt="">
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="question-semi-box">
+                    <h4><a class="text-decoration-none question" href="#">Which terms is better for ranking in google?</a></h4>
+                    <p class="question-p">These days there are so many career choices to take in the programmer world. But one of
+                      successful and important ones is Web Development.</p>
+                    <div class="d-flex flex-column flex-sm-row mt-3">
+                      <a class="text-decoration-none mb-3 mb-sm-0" href="#your-answer"><img src="./images/answer-icon.png" alt=""><span class="answer-link">Answer</span></a>
+                      <div class="d-flex ms-sm-auto align-items-center">
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-like-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                        <div>
+                          <span class="total-like">25,567</span>
+                        </div>
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-dislike-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="question-box">
+                  <div class="d-flex user-desc">
+                    <a href="#"><img class="user-img" src="./images/user-img.png" alt=""></a>
+                    <div>
+                      <h6 class="mb-2"><a class="link-hover text-decoration-none" href="#">Andrew Jonthan</a></h6>
+                      <div class="d-flex flex-column flex-sm-row date-view-box">
+                        <p class="in mb-1 mb-sm-0">In <a class="text-decoration-none" href="#"><u class="on-page link-hover">On page seo</u></a></p>
+                        <p class="divider-border date mb-1 mb-sm-0">Sep 25, 2020</p>
+                        <p class="views mb-1 mb-sm-0">25,567 Views</p>
+                      </div>
+                    </div>
+                    <div class="dropdown ms-auto">
+                      <a class="btn shadow-none py-0 px-1" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/vertical-dots.png" alt="">
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="question-semi-box">
+                    <h4><a class="text-decoration-none question" href="#">How to choose the right keyword? Which term is better to rank higher is it long tail or short tail keyword?</a></h4>
+                    <div class="d-flex flex-column flex-sm-row mt-4">
+                      <a class="text-decoration-none mb-3 mb-sm-0" href="#your-answer"><img src="./images/answer-icon.png" alt=""><span class="answer-link">Answer</span></a>
+                      <div class="d-flex ms-sm-auto align-items-center">
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-like-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                        <div>
+                          <span class="total-like">25,567</span>
+                        </div>
+                        <div>
+                          <a class="text-decoration-none" href="#" role="button" data-slide="prev">
+                            <img class="hover-show" src="./images/light-dislike-icon.png" alt="">
+                            <img class="hover-hide" src="./images/blue-like-icon.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <nav id="id-pagination-nav">
+                      <ul class="pagination pagination-sm justify-content-center justify-content-md-start mb-0">
+                        <li id="id-pagination-lt" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page('<');"><i class="fas fa-angle-left arrow-color"></i></a></li>
+                        <li id="id-pagination-1" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">1</a></li>
+                        <li id="id-pagination-dots-1" class="d-none page-item p-1 disabled">...</li>
+                        <li id="id-pagination-2" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">2</a></li>
+                        <li id="id-pagination-3" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">3</a></li>
+                        <li id="id-pagination-4" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">4</a></li>
+                        <li id="id-pagination-5" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">5</a></li>
+                        <li id="id-pagination-6" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">6</a></li>
+                        <li id="id-pagination-dots-2" class="d-none page-item p-1 disabled">...</li>
+                        <li id="id-pagination-7" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">7</a></li>
+                        <li id="id-pagination-8" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">8</a></li>
+                        <li id="id-pagination-9" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">9</a></li>
+                        <li id="id-pagination-10" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">10</a></li>
+                        <li id="id-pagination-11" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">11</a></li>
+                        <li id="id-pagination-dots-3" class="d-none page-item p-1 disabled">...</li>
+                        <li id="id-pagination-12" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page(this.text);">12</a></li>
+                        <li id="id-pagination-gt" class="d-none page-item px-1"><a class="page-link dot border-0"
+                            onclick="pagination_setup_page('>');"><i class="fas fa-angle-right arrow-color"></i></a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col-12 col-md-6 mt-2 my-lg-0 text-center text-md-end">
+                    <form class="form-inline">
+                      <div class="form-group input-group-sm">
+                        <label for="id-pagination-input" class="mr-2 gray-color small font-size-15 dark-blue-color me-1">Go to</label>
+                        <input id="id-pagination-input" type="text" class="mr-2 text-center page-box-border align-bottom me-1" placeholder="">
+                        <button type="button" class="btn pagination-btn"
+                          onclick="pagination_setup_page(document.querySelector('#id-pagination-input').value);">
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="chat-box">
+                <div class="d-flex flex-column flex-md-row text-center">
+                  <div class="mb-3 mb-lg-0"><img src="./images/chat-img.png" alt=""></div>
+                  <p class="chat-p mb-3 mb-lg-0">Unable to find what you are looking for?  Try asking the Community.</p>
+                  <div class="d-flex align-items-center justify-content-center"><button class="btn aks-now-btn text-nowrap">Ask Now</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-11">
+            <div class="border-b"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h4 class="faq-title">Frequently asked questions</h4>
+          </div>
+          <div class="col-lg-8">
+            <div class="faq-container">
+              <div class="faq-box">
+                <p class="mb-0">
+                  <button class="btn faq-h shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    <div class="d-flex">
+                      <div><img class="me-3" src="./images/plus-btn.png" alt=""></div>
+                      <div class="text-start"><span>Which are best places to get SEO tips?</span></div>
+                    </div>
+                  </button>
+                </p>
+                <div class="collapse" id="collapse1">
+                  <div class="card card-body mycard-body border-0">
+                    These days there are so many career choices to take in the programmer world. But one of successful and important ones is Web Development.
+                  </div>
+                </div>
+              </div>
+              <div class="faq-box">
+                <p class="mb-0">
+                  <button class="btn faq-h shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    <div class="d-flex">
+                      <div><img class="me-3" src="./images/plus-btn.png" alt=""></div>
+                      <div class="text-start"><span>Why search engine optimization is required?</span></div>
+                    </div>
+                  </button>
+                </p>
+                <div class="collapse" id="collapse2">
+                  <div class="card card-body mycard-body border-0">
+                    These days there are so many career choices to take in the programmer world. But one of successful and important ones is Web Development.
+                  </div>
+                </div>
+              </div>
+              <div class="faq-box">
+                <p class="mb-0">
+                  <button class="btn faq-h shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    <div class="d-flex">
+                      <div><img class="me-3" src="./images/plus-btn.png" alt=""></div>
+                      <div class="text-start"><span>What is on-page SEO?</span></div>
+                    </div>
+                  </button>
+                </p>
+                <div class="collapse" id="collapse3">
+                  <div class="card card-body mycard-body border-0">
+                    These days there are so many career choices to take in the programmer world. But one of successful and important ones is Web Development.
+                  </div>
+                </div>
+              </div>
+              <div class="faq-box">
+                <p class="mb-0">
+                  <button class="btn faq-h shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    <div class="d-flex">
+                      <div><img class="me-3" src="./images/plus-btn.png" alt=""></div>
+                      <div class="text-start"><span>Why do people learn SEO these days?</span></div>
+                    </div>
+                  </button>
+                </p>
+                <div class="collapse" id="collapse4">
+                  <div class="card card-body mycard-body border-0">
+                    These days there are so many career choices to take in the programmer world. But one of successful and important ones is Web Development.
+                  </div>
+                </div>
+              </div>
+              <div class="faq-box">
+                <p class="mb-0">
+                  <button class="btn faq-h shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    <div class="d-flex">
+                      <div><img class="me-3" src="./images/plus-btn.png" alt=""></div>
+                      <div class="text-start"><span>Where to start with basic SEO?</span></div>
+                    </div>
+                  </button>
+                </p>
+                <div class="collapse" id="collapse5">
+                  <div class="card card-body mycard-body border-0">
+                    These days there are so many career choices to take in the programmer world. But one of successful and important ones is Web Development.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="newsletter-section">
+      <div class="container newsletter-bg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="newsletter-container">
+              <div class="text-center">
+                <h2 class="newsletter-h">Subscribe to our newsletter</h2>
+                <p class="newsletter-p">Get latest info in your inbox weekly!</p>
+              </div>
+              <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input my-chekbox shadow-none" type="checkbox" value="" id="flexCheckChecked1"
+                    checked>
+                  <label class="form-check-label my-label text-nowrap" for="flexCheckChecked1">
+                    Identification
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input my-chekbox shadow-none" type="checkbox" value="" id="flexCheckChecked2"
+                    checked>
+                  <label class="form-check-label my-label text-nowrap" for="flexCheckChecked2">
+                    Technical Seo
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input my-chekbox shadow-none" type="checkbox" value="" id="flexCheckChecked3"
+                    checked>
+                  <label class="form-check-label my-label text-nowrap" for="flexCheckChecked3">
+                    On Page Seo
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input my-chekbox shadow-none" type="checkbox" value="" id="flexCheckChecked4"
+                    checked>
+                  <label class="form-check-label my-label text-nowrap" for="flexCheckChecked4">
+                    Off Page Seo
+                  </label>
+                </div>
+              </div>
+              <div class="subscribe-container">
+                <div class="input-group subscribe-box overflow-hidden">
+                  <input type="text" class="form-control shadow-none border-0 subscribe-input"
+                    placeholder="Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn subscribe-btn shadow-none mt-3 mt-sm-0" type="button"
+                    id="button-addon2">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div><a href="#"><img src="./images/footer-logo.png" alt=""></a></div>
+          <p class="footer-p">Lorem ipsum dolor sit amet, consectetur adicin
+            elit. Morbi pellentesque vehicula magna, nec
+            lobortis lorem sagittis ut.</p>
+          <div><button class="btn learn-more-btn">Learn more</button></div>
+        </div>
+        <div class="col-lg-5">
+          <h6 class="footer-h">Quick Links</h6>
+          <div class="row">
+            <div class="col-xl-11">
+              <div class="row">
+                <div class="col-sm-4">
+                  <ul class="list-style-none ps-0">
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Questions</a>
+                    </li>
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Videos</a></li>
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Articles</a>
+                    </li>
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Resources</a>
+                    </li>
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Tools</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 ps-sm-0">
+                  <ul class="list-style-none ps-0">
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Indications</a>
+                    </li>
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Technical
+                        Seo</a></li>
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Onpage Seo</a>
+                    </li>
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Offpage Seo</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 px-sm-0">
+                  <ul class="list-style-none ps-0">
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Privacy
+                        Policy</a></li>
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Terms &
+                        Condition</a></li>
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Help &
+                        Support</a></li>
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Advertise</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="footer-h">Be Social</h6>
+          <div class="footer-icon-box">
+            <a href="#"><i class="fab fa-facebook-square footer-icon pe-2"></i></a>
+            <a href="#"><i class="fab fa-twitter-square footer-icon pe-2"></i></a>
+            <a href="#"><i class="fab fa-linkedin footer-icon"></i></a>
+          </div>
+          <p>Copyright 2020, All Rights Reserved by <a class="text-decoration-none  seodbate-link"
+              href="#">SEODebate.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="./js/SEODebateV7.js"></script>
+</body>
+
+</html>
