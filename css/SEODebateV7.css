@@ -90,6 +90,7 @@ p {
 
 
 
+
 .text-writer {
   background: white;
   border: 1px solid rgb(229, 231, 236);
@@ -352,7 +353,7 @@ a:hover .hover-hide {
   font-family: AvertaCY-Regular;
   color: #031b4e;
 }
-.form-check input:hover, .form-check label:hover{
+.form-check input:hover, .form-check label:hover, .input-group-text:hover{
   cursor: pointer;
 }
 
