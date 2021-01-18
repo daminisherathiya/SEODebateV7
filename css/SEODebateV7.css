@@ -261,12 +261,18 @@ textarea {
   color: #031b4e;
   margin-left: 7px;
 }
+.answer-link:hover {
+  color: #3369e8;
+}
 a:hover .hover-show {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(2442%) hue-rotate(214deg) brightness(96%) contrast(90%);
+}
+/* a:hover .hover-show {
   display: none;
 }
 a:hover .hover-hide {
   display: inline-block;
-}
+} */
 .hover-hide {
   display: none;
 }
