@@ -318,6 +318,10 @@ a:hover .hover-hide {
 .search-keyword-input {
   padding: 14px 18px;
 }
+.search-keyword-input::placeholder {
+  color: #031b4e;
+  font-family: AvertaCY-Regular;
+}
 .sidebar-border{
   border: 1px solid rgb(198, 203, 214);
   border-radius: 5px;
@@ -329,7 +333,7 @@ a:hover .hover-hide {
 .filter-title {
   font-family: AvertaCY-Regular;
   font-size: 14px;
-  color: #5b6987;
+  color: #031b4e;
   margin-bottom: 20px;
 }
 .filter-box {
@@ -360,8 +364,9 @@ a:hover .hover-hide {
   border-radius: 1px;
   border-color: #3369e8;
 }
-
-
+.selected {
+  font-family: AvertaCY-Regular;
+}
 
 
 
