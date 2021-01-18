@@ -687,6 +687,37 @@ a:hover .hover-hide {
   .main-title-section {
     background: linear-gradient(to bottom,#f5f7fb 85.9%,#fff 85.9%);
   }
+  .sidebar {
+    background: #fff;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    top: 70px;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 11px 1px rgba(29, 26, 27, 0.2);
+    padding: 15px;
+    overflow: auto;
+  }
+  .close {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  #mySidebar::-webkit-scrollbar {
+    width: 7px;
+  }
+  /* Track */
+  #mySidebar::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  #mySidebar::-webkit-scrollbar-thumb {
+    background: #3369e8; 
+  }
+  .q-box-padding {
+    padding-left: 0;
+  }
 }
 @media (max-width: 767px) {
   .checkboxes, .subscribe-container {
@@ -725,9 +756,7 @@ a:hover .hover-hide {
   .newsletter-h {
     font-size: 24px;
   }
-  .q-box-padding {
-    padding-left: 0;
-  }
+  
   .divider-border {
     border: none;
     margin: 0;

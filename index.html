@@ -193,130 +193,141 @@
     <section class="">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-lg-3">
             <div class="filter-box">
-              <h4 class="filter-title">FILTERS</h4>
-            </div>
-            <div class="filter-box">
-              <div class="pb-2">
-                <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#Myactivity" aria-expanded="false" aria-controls="Myactivity">
-                  <div>My activity</div>
-                  <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
-                </button>
-              </div>  
-              <div class="collapse show mb-3" id="Myactivity">
-                <div class="form-check">
-                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault">
-                    Created or replied to
-                  </label>
-                </div>
+              <div class="d-flex">
+                <h4 class="filter-title">FILTERS</h4>
+                <div class="ms-auto d-lg-none" onclick="w3_open()"><i class="fas fa-filter"></i></div>
               </div>
             </div>
-            <div class="filter-box">
-              <div class="pb-2">
-                <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#contains" aria-expanded="false" aria-controls="contains">
-                  <div>Contains</div>
-                  <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
-                </button>
-              </div>  
-              <div class="collapse show mb-3" id="contains">
-                <div class="form-check mb-3">
-                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault1">
-                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault1">
-                    Recommend Answer
-                  </label>
-                </div>
-                <div class="form-check mb-3">
-                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault2">
-                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault2">
-                    Bump Question
-                  </label>
-                </div>
-                <div class="form-check mb-3">
-                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault3">
-                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault3">
-                   Featured Questions
-                  </label>
-                </div>
-                <div class="form-check mb-3">
-                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault4">
-                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault4">
-                    Must read Questions
-                  </label>
+            <div id="mySidebar" class="sidebar d-none d-lg-block pb-5" >
+              <div class="filter-box d-lg-none">
+                <div class="d-flex align-items-center">
+                  <h4 class="filter-title mb-0">FILTERS</h4>
+                  <button onclick="w3_close()" class="btn ms-auto shadow-none close">&times;</button>
                 </div>
               </div>
-            </div>
-            <div class="filter-box">
-              <div class="pb-2">
-                <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#questiontype" aria-expanded="false" aria-controls="questiontype">
-                  <div>Question type</div>
-                  <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
-                </button>
-              </div>  
-              <div class="collapse show mb-3" id="questiontype">
-                <div class="form-check mb-3">
-                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault5">
-                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault5">
-                    Recent Questions
-                  </label>
-                </div>
-                <div class="form-check mb-3">
-                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault6">
-                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault6">
-                    Most Answered
-                  </label>
-                </div>
-                <div class="form-check mb-3">
-                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault7">
-                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault7">
-                    No Answers
-                  </label>
-                </div>
-                <div class="form-check mb-3">
-                  <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault8">
-                  <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault8">
-                    Most Visited
-                  </label>
+              <div class="filter-box">
+                <div class="pb-2">
+                  <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#Myactivity" aria-expanded="false" aria-controls="Myactivity">
+                    <div>My activity</div>
+                    <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
+                  </button>
+                </div>  
+                <div class="collapse show mb-3" id="Myactivity">
+                  <div class="form-check">
+                    <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault">
+                      Created or replied to
+                    </label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="filter-box">
-              <div class="pb-4">
-                <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#Details" aria-expanded="false" aria-controls="Details">
-                  <div>Details</div>
-                  <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
-                </button>
-              </div>  
-              <div class="collapse show mb-3" id="Details">
-                <div class="form-floating me-2">
-                  <select class="form-select p-3 shadow-none sidebar-border selected" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected >Topic</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
+              <div class="filter-box">
+                <div class="pb-2">
+                  <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#contains" aria-expanded="false" aria-controls="contains">
+                    <div>Contains</div>
+                    <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
+                  </button>
+                </div>  
+                <div class="collapse show mb-3" id="contains">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault1">
+                    <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault1">
+                      Recommend Answer
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault2">
+                    <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault2">
+                      Bump Question
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault3">
+                    <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault3">
+                     Featured Questions
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault4">
+                    <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault4">
+                      Must read Questions
+                    </label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="filter-box border-0">
-              <div class="pb-2">
-                <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#typekeywords" aria-expanded="false" aria-controls="typekeywords">
-                  <div>Search</div>
-                  <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
-                </button>
-              </div>  
-              <div class="collapse show mb-3 me-2" id="typekeywords">
-                <div class="input-group mb-3 sidebar-border">
-                  <input type="text" class="form-control border-0 shadow-none search-keyword-input" placeholder="Type keywords"
-                  aria-label="Username" aria-describedby="basic-addon1">
-                  <span class="input-group-text bg-white border-0" id="basic-addon1"><img src="./images/search-icon.png"
-                    alt=""></span>
+              <div class="filter-box">
+                <div class="pb-2">
+                  <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#questiontype" aria-expanded="false" aria-controls="questiontype">
+                    <div>Question type</div>
+                    <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
+                  </button>
+                </div>  
+                <div class="collapse show mb-3" id="questiontype">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault5">
+                    <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault5">
+                      Recent Questions
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault6">
+                    <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault6">
+                      Most Answered
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault7">
+                    <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault7">
+                      No Answers
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input my-chekbox1 shadow-none" type="checkbox" value="" id="flexCheckDefault8">
+                    <label class="form-check-label checkbox-label ms-2 align-middle" for="flexCheckDefault8">
+                      Most Visited
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-box">
+                <div class="pb-4">
+                  <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#Details" aria-expanded="false" aria-controls="Details">
+                    <div>Details</div>
+                    <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
+                  </button>
+                </div>  
+                <div class="collapse show mb-3" id="Details">
+                  <div class="form-floating me-2">
+                    <select class="form-select p-3 shadow-none sidebar-border selected" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected >Topic</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-box border-0">
+                <div class="pb-2">
+                  <button class="btn filter-h shadow-none p-0 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#typekeywords" aria-expanded="false" aria-controls="typekeywords">
+                    <div>Search</div>
+                    <div class="me-md-3"><img class="" src="./images/filter-arrow.png" alt=""></div>
+                  </button>
+                </div>  
+                <div class="collapse show mb-3 me-2" id="typekeywords">
+                  <div class="input-group mb-3 sidebar-border">
+                    <input type="text" class="form-control border-0 shadow-none search-keyword-input" placeholder="Type keywords"
+                    aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-text bg-white border-0" id="basic-addon1"><img src="./images/search-icon.png"
+                      alt=""></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-8 col-sm-9">
+          <div class="col-xl-8 col-lg-9">
             <div class="q-box-padding">
               <div id="id-pagination-data">
                 <div class="question-box">

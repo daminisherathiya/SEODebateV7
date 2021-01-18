@@ -11,6 +11,16 @@ function pagination() {
   pagination_setup_page(1);
 }
 
+function w3_open() {
+  console.log("hello")
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("mySidebar").classList.toggle("d-none");
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
 
 function populate_data_for_pagination() {
   const data_items = document.querySelectorAll("#id-pagination-data > div");
