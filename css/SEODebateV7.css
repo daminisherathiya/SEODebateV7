@@ -570,7 +570,15 @@ a:hover .hover-hide {
   font-size: 15px;
   padding: 13px 10px;
 }
-
+.my-chekbox:checked, .my-chekbox1:checked {
+  border: none;
+}
+.my-chekbox:focus {
+  border-color: #e1e3e7;
+}
+.my-chekbox1:focus {
+  border-color: rgb(198, 203, 214);
+}
 
 /* footer */
 .footer-section {
