@@ -152,7 +152,7 @@ textarea {
 }
 .main-title-section {
   padding: 96px 0 66px 0;
-  background: linear-gradient(to bottom,#f5f7fb 80.9%,#fff 80.9%);
+  background: linear-gradient(to bottom,#f5f7fb 83.9%,#fff 83.9%);
 }
 .background-img {
   background: url(../images/background-img1.png) no-repeat top center;
@@ -317,6 +317,8 @@ a:hover .hover-hide {
 
 .search-keyword-input {
   padding: 14px 18px;
+  color: #031b4e;
+  font-family: AvertaCY-Regular;
 }
 .search-keyword-input::placeholder {
   color: #031b4e;
@@ -349,6 +351,9 @@ a:hover .hover-hide {
 .checkbox-label {
   font-family: AvertaCY-Regular;
   color: #031b4e;
+}
+.form-check input:hover, .form-check label:hover{
+  cursor: pointer;
 }
 
 .collapse.show .form-check-input[type=checkbox] {
@@ -439,6 +444,9 @@ a:hover .hover-hide {
   color: #3369e8;
   font-family: AvertaCY-Bold;
   padding: 7px 26px;
+}
+.aks-now-btn:hover {
+  color: #1e4ab1;
 }
 .chat-p {
   color: white;
@@ -642,7 +650,7 @@ a:hover .hover-hide {
     padding: 48px 0px 10px 0px;
   }
   .text-area-container {
-    padding: 42.5px 30.5px;
+    padding: 42.5px 0;
   }
   .footer-p {
     margin: 15px 0 15px 0;
@@ -664,6 +672,13 @@ a:hover .hover-hide {
   }
   .faq-section {
     padding: 11px 0 31px 0;
+  }
+  .faq-container {
+    padding: 0;
+  }
+  .main-title-section {
+    background: linear-gradient(to bottom,#f5f7fb 85.9%,#fff 85.9%);
+  }
 }
 @media (max-width: 767px) {
   .checkboxes, .subscribe-container {
@@ -683,6 +698,12 @@ a:hover .hover-hide {
   }
   .question-box {
     padding: 20px;
+  }
+  .title-p {
+    margin-bottom: 25px;
+  }
+  .main-title-section {
+    background: linear-gradient(to bottom,#f5f7fb 81.9%,#fff 81.9%);
   }
 }
 @media (max-width: 575px) {
