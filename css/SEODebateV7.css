@@ -51,6 +51,7 @@ p {
 .nav-item .nav-link.mynav-link {
   color: #5b6987;
   padding: 8px 14px;
+  line-height: 35px;
 }
 .nav-item .nav-link.mynav-link:hover {
   color: #031b4e;
