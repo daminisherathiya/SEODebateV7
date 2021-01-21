@@ -206,6 +206,10 @@ textarea {
 
 
 
+.background-img2 {
+  background: url(../images/background-img2.png) no-repeat top center;
+}
+  
 
 .q-box-padding {
   padding-left: 28px;
