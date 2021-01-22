@@ -268,7 +268,7 @@ textarea {
 .answer-link:hover {
   color: #3369e8;
 }
-a:hover .hover-show {
+a:hover .hover-show, .dropdown:hover .verical-dot{
   filter: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(2442%) hue-rotate(214deg) brightness(96%) contrast(90%);
 }
 /* a:hover .hover-show {
@@ -388,7 +388,9 @@ a:hover .hover-hide {
 
 
 
-
+.pagination-coursor {
+  cursor: pointer;
+}
 .dot {
   height: 28px;
   width: 28px;
@@ -488,6 +490,9 @@ a:hover .hover-hide {
   font-family: Averta-Semibold;
   letter-spacing: -0.3px;
   padding: 0;
+}
+.faq-h:hover {
+  color: #3369e8;
 }
 .mycard-body {
   background-color: transparent;
